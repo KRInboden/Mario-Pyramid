@@ -1,10 +1,24 @@
-
-printPyramid(5);
-// TODO #2
-// Take in user input for the height
-
 var rows = parseInt(prompt("how tall do you want the pyramid? "));
 
+printPyramid();
+marioPyramid(rows);
+// TODO #2
+// Take in user input for the height
+function marioPyramid(rows) {
+
+  var str = "";
+  for(var i=rows; i>=1; i--) { 
+    for(var j=0; j<=i; j++) {
+      str += "\xa0"
+    }
+    for(var j=rows; j>=i-1; j--) {
+      str += "#";
+    }
+      
+  str = str + "\n"
+  }
+  console.log(str);
+}
 /*
  * printPyramid
  *
@@ -25,16 +39,5 @@ function printPyramid(height) {
 
 }
 
-var str = "";
-for(var i=rows; i>=1; i--) { 
-  for(var j=0; j<=i; j++) {
-     str += "\xa0"
-  }
-  for(var j=rows; j>=i-1; j--) {
-    str += "#";
-  }
-    
-str = str + "\n"
-}
-console.log(str);
+
 
