@@ -3,6 +3,7 @@ printPyramid(5);
 // TODO #2
 // Take in user input for the height
 
+var rows = parseInt(prompt("how tall do you want the pyramid? "));
 
 /*
  * printPyramid
@@ -23,17 +24,17 @@ function printPyramid(height) {
     // print that pyramid!
 
 }
-let rows = 8;
 
-let str = "";
-
-for(let i=0; i>1; i--){  
-  for(let j=0; j<i; j++){
-    str += "\xa0\xa0";
+var str = "";
+for(var i=rows; i>=1; i--) { 
+  for(var j=0; j<=i; j++) {
+     str += "\xa0"
   }
-  for(let j=0; j>=i; j--){
-    str += "#"
+  for(var j=rows; j>=i-1; j--) {
+    str += "#";
   }
-
-  console.log(str);
+    
+str = str + "\n"
 }
+console.log(str);
+
