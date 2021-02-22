@@ -1,5 +1,5 @@
 var para = document.createElement("p");
-var node = document.createTextNode("Insert 'printPyramid' here!!!");
+var node = document.createTextNode(printPyramid(rows));
 para.appendChild(node);
 var element = document.getElementById("pyramid");
 element.appendChild(para);
@@ -28,18 +28,19 @@ function printPyramid(height) {
     // TODO #1
     // print that pyramid!
 
-    var str = "";
-    for(var i=rows; i>=1; i--) { 
-      for(var j=0; j<=i; j++) {
-        str += "\xa0"
-      }
-      for(var j=rows; j>=i-1; j--) {
-        str += "#";
-      }
-        
-      str += "\n"
+  var str = "";
+  for(var i=rows; i>=1; i--) { 
+    for(var j=0; j<=i; j++) {
+      str += " ."
     }
-    console.log(str);
+    for(var j=rows; j>=i-1; j--) {
+      str += "#";
+    }
+      
+    str += "</br>"
+  }
+  document.write(str);
+  return str;
 }
 
 
