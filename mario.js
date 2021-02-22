@@ -1,4 +1,7 @@
 var rows = parseInt(prompt("how tall do you want the pyramid? "));
+var element = document.getElementById("pyramid");
+element.innerHTML = marioPyramid(rows);
+
 
 printPyramid();
 marioPyramid(rows);
@@ -15,7 +18,7 @@ function marioPyramid(rows) {
       str += "#";
     }
       
-  str = str + "\n"
+    str = str + "\n"
   }
   console.log(str);
 }

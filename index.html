@@ -22,6 +22,15 @@
         </div>
     </div>
 
-    <script src="mario.js"></script>
+    <script src="mario.js">
+      var para = document.createElement("p");
+      var node = document.createTextNode("hi");
+      para.appendChild(node);
+      var element = document.getElementById("pyramid");
+      element.appendChild(para);
+
+      var pyramid = document.getElementById("pyramid");
+      pyramid.innerHTML = marioPyramid(rows);
+    </script>
 </body>
 </html>
