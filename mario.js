@@ -24,8 +24,6 @@ printPyramid(rows);
  */
 
 function printPyramid(height) {
-    console.log("Uh oh... the pyramid is under construction.");
-    console.log("Check back soon, our developers are hard at work as we speak!");
     
     // TODO #1
     // print that pyramid!
