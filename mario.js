@@ -1,27 +1,15 @@
-var rows = parseInt(prompt("how tall do you want the pyramid? "));
+
 var element = document.getElementById("pyramid");
-element.innerHTML = marioPyramid(rows);
+
 
 
 printPyramid();
-marioPyramid(rows);
+
 // TODO #2
 // Take in user input for the height
-function marioPyramid(rows) {
+var rows = parseInt(prompt("how tall do you want the pyramid? "));
 
-  var str = "";
-  for(var i=rows; i>=1; i--) { 
-    for(var j=0; j<=i; j++) {
-      str += "\xa0"
-    }
-    for(var j=rows; j>=i-1; j--) {
-      str += "#";
-    }
-      
-    str = str + "\n"
-  }
-  console.log(str);
-}
+
 /*
  * printPyramid
  *
@@ -36,7 +24,18 @@ function marioPyramid(rows) {
 function printPyramid(height) {
     console.log("Uh oh... the pyramid is under construction.");
     console.log("Check back soon, our developers are hard at work as we speak!");
-
+    var str = "";
+    for(var i=rows; i>=1; i--) { 
+      for(var j=0; j<=i; j++) {
+        str += "\xa0"
+      }
+      for(var j=rows; j>=i-1; j--) {
+        str += "#";
+      }
+        
+      str = str + "\n"
+    }
+    console.log(str);
     // TODO #1
     // print that pyramid!
 
