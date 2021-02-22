@@ -1,3 +1,9 @@
+var para = document.createElement("p");
+var node = document.createTextNode("Insert 'printPyramid' here!!!");
+para.appendChild(node);
+var element = document.getElementById("pyramid");
+element.appendChild(para);
+
 // TODO #2
 // Take in user input for the height
 
