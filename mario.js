@@ -39,7 +39,7 @@ function printPyramid(height) {
         str += "#";
       }
         
-      str = str + "\n"
+      str += "\n"
     }
     console.log(str);
 }
