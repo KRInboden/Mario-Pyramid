@@ -1,14 +1,9 @@
-
-var element = document.getElementById("pyramid");
-
-
-
-printPyramid();
-
 // TODO #2
 // Take in user input for the height
+
 var rows = parseInt(prompt("how tall do you want the pyramid? "));
 
+printPyramid(rows);
 
 /*
  * printPyramid
@@ -21,9 +16,14 @@ var rows = parseInt(prompt("how tall do you want the pyramid? "));
  *       #####
  *      ######
  */
+
 function printPyramid(height) {
     console.log("Uh oh... the pyramid is under construction.");
     console.log("Check back soon, our developers are hard at work as we speak!");
+    
+    // TODO #1
+    // print that pyramid!
+
     var str = "";
     for(var i=rows; i>=1; i--) { 
       for(var j=0; j<=i; j++) {
@@ -36,9 +36,6 @@ function printPyramid(height) {
       str = str + "\n"
     }
     console.log(str);
-    // TODO #1
-    // print that pyramid!
-
 }
 
 
