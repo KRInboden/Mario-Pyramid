@@ -1,8 +1,13 @@
+//creating the location for the pyramid to go into HTML document
 var para = document.createElement("p");
 var node = document.createTextNode(printPyramid(rows));
 para.appendChild(node);
 var element = document.getElementById("pyramid");
 element.appendChild(para);
+
+//removing the 'construction' div from the document
+var removeElement = document.getElementById("construction");
+removeElement.remove();
 
 // TODO #2
 // Take in user input for the height
