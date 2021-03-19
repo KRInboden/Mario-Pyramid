@@ -33,7 +33,7 @@ function printPyramid(height) {
   for(var i=height; i>=1; i--) {
     str = "";
     for(var j=0; j<=i; j++) {
-      str += "."
+      str += ".";
     }
     for(var j=height; j>=i-1; j--) {
       str += "#";
