@@ -1,6 +1,6 @@
 //removing the 'construction' div from the document
-var removeElement = document.getElementById("construction");
-removeElement.remove();
+//var removeElement = document.getElementById("construction");
+//removeElement.remove();
 
 // TODO #2
 // Take in user input for the height
@@ -10,7 +10,7 @@ function userInput() {
   var rows = parseInt(prompt("how tall do you want the pyramid? "));
   return rows;
 }
-printPyramid(userInput());
+//printPyramid(userInput());
 
 /*
  * printPyramid
