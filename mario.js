@@ -2,12 +2,14 @@
 //var removeElement = document.getElementById("construction");
 //removeElement.remove();
 
+var height = document.getElementById("height").value;
+
 // TODO #2
 // Take in user input for the height
 
 function userInput() {
 
-  var rows = parseInt(prompt("how tall do you want the pyramid? "));
+  var rows = document.getElementById("height").value;
   return rows;
 }
 //printPyramid(userInput());
@@ -25,7 +27,7 @@ function userInput() {
  */
 
 function printPyramid(height) {
-    
+  document.getElementById("pyramid").innerHTML = "";
     // TODO #1
     // print that pyramid!
 
