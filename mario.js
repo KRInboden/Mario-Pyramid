@@ -2,7 +2,12 @@
 //var removeElement = document.getElementById("construction");
 //removeElement.remove();
 
-var height = document.getElementById("height").value;
+//var height = document.getElementById("height").value;
+
+var button = document.querySelector("button");
+  button.addEventListener("click", () => {
+    printPyramid(userInput());
+  });
 
 // TODO #2
 // Take in user input for the height
@@ -49,6 +54,3 @@ function printPyramid(height) {
   }
   return str;
 }
-
-
-
