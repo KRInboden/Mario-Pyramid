@@ -57,4 +57,4 @@ function printPyramid(height) {
   return str;
 }
 
-// document.getElementById("brickSymbol").addEventListener("change", printPyramid(userInput()))
+// document.getElementById("brickSymbol").addEventListener("change", window.location.reload(false));

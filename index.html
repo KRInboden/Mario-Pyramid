@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-
-        #pyramid {
-            line-height: 0;
-            font-size: 30px;
-        }
-
-        .leftFloat {
-          float: left;
-        }
-
-        .rightFloat {
-          float: right;
-        }
-
-        body {
-            font-family: "Courier New", monospace;
-            text-align: center;
-       }
-    </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body >
-    <div>
+    <div class="titleBox">
       <h1>Pyramid Slide</h1>
     </div>
 
@@ -31,27 +12,32 @@
     
     <div class="bigBox">
       <div class="topBox">
-        <label class="leftFloat">Brick Symbol:
+        <br>
+        <label>Brick Symbol:</label>
         <select name="brickType" id="brickSymbol">
           <option value="#" selected>#</option>
           <option value="@">@</option>
           <option value="X">X</option>
           <option value="$">$</option>
-        </select></label>
+        </select>
 
-        <form class="rightFloat">
+        <br>
+
+        <form>
           <label for="pyramidHeight">How High?</label>
           <input type="range" id="height" name="height" min="1" max="20"  oninput="this.nextElementSibling.value = this.value ; printPyramid(userInput())">
           <output>11</output>
         </form>
+        <br>
       </div>
 
       <br><br>
 
+      <div id="pyramid">
+      </div>
+
       <br><br>
 
-      <div class="bottomBox" id="pyramid">
-      </div>
     </div>
 
     <script src="mario.js"></script>
