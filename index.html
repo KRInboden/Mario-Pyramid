@@ -8,6 +8,14 @@
             font-size: 30px;
         }
 
+        .leftFloat {
+          float: left;
+        }
+
+        .rightFloat {
+          float: right;
+        }
+
         body {
             font-family: "Courier New", monospace;
             text-align: center;
@@ -15,30 +23,37 @@
     </style>
 </head>
 <body >
-    <h1>Mario 3</h1>
+    <div>
+      <h1>Pyramid Slide</h1>
+    </div>
 
     <br>
+    
+    <div class="bigBox">
+      <div class="topBox">
+        <label class="leftFloat">Brick Symbol:
+        <select name="brickType" id="brickSymbol">
+          <option value="#" selected>#</option>
+          <option value="@">@</option>
+          <option value="X">X</option>
+          <option value="$">$</option>
+        </select></label>
 
-    <p>When you say</p>
+        <form class="rightFloat">
+          <label for="pyramidHeight">How High?</label>
+          <input type="range" id="height" name="height" min="1" max="20"  oninput="this.nextElementSibling.value = this.value ; printPyramid(userInput())">
+          <output>11</output>
+        </form>
+      </div>
 
-    <p><strong>Draw a pyramid</strong></p>
+      <br><br>
 
-    <p>I say:</p>
+      <br><br>
 
-    <br>
-
-    <label>How high?</label>
-
-    <input type="text" id="height">
-
-    <br><br>
-
-    <button>Draw a pyramid</button>
-
-    <br><br>
-
-    <div id="pyramid"></div>
+      <div class="bottomBox" id="pyramid">
+      </div>
+    </div>
 
     <script src="mario.js"></script>
 </body>
-</html>
+</htmlS

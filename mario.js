@@ -1,20 +1,20 @@
 //removing the 'construction' div from the document
-//var removeElement = document.getElementById("construction");
+//let removeElement = document.getElementById("construction");
 //removeElement.remove();
 
-//var height = document.getElementById("height").value;
+//let height = document.getElementById("height").value;
 
-var button = document.querySelector("button");
-  button.addEventListener("click", () => {
-    printPyramid(userInput());
-  });
+// let button = document.querySelector("button");
+//   button.addEventListener("click", () => {
+//     printPyramid(userInput());
+//   });
 
 // TODO #2
 // Take in user input for the height
 
 function userInput() {
 
-  var rows = document.getElementById("height").value;
+  let rows = document.getElementById("height").value;
   return rows;
 }
 //printPyramid(userInput());
@@ -35,22 +35,26 @@ function printPyramid(height) {
   document.getElementById("pyramid").innerHTML = "";
     // TODO #1
     // print that pyramid!
+  
+  let brick = document.getElementById("brickSymbol").value;
 
-  var str = "";
-  for(var i=height; i>=1; i--) {
+  let str = "";
+  for(let i=height; i>=1; i--) {
     str = "";
-    for(var j=0; j<=i; j++) {
+    for(let j=0; j<=i; j++) {
       str += ".";
     }
-    for(var j=height; j>=i-1; j--) {
-      str += "#";
+    for(let j=height; j>=i-1; j--) {
+      str += brick;
     }
     //creating the location for the pyramid to go into HTML document
-    var para = document.createElement("p");
-    var node = document.createTextNode(str);
+    let para = document.createElement("p");
+    let node = document.createTextNode(str);
     para.appendChild(node);
-    var element = document.getElementById("pyramid");
+    let element = document.getElementById("pyramid");
     element.appendChild(para);
   }
   return str;
 }
+
+// document.getElementById("brickSymbol").addEventListener("change", printPyramid(userInput()))
