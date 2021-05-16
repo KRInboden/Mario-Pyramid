@@ -42,7 +42,7 @@ function printPyramid(height) {
   for(let i=height; i>=1; i--) {
     str = "";
     for(let j=0; j<=i; j++) {
-      str += ".";
+      str += "";
     }
     for(let j=height; j>=i-1; j--) {
       str += brick;

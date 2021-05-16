@@ -1,6 +1,8 @@
 #pyramid {
   line-height: 0;
   font-size: 30px;
+  padding-right: 45%;
+  text-align: right;
 }
 
 .titleBox{
